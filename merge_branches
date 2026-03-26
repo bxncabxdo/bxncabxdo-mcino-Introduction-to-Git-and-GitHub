@@ -1,0 +1,68 @@
+theia@theia-bcabxdo:/home/project$ git clone https://github.com/bxncabxdo/bxncabxdo-mcino-Introduction-to-Git-and-GitHub.git
+Cloning into 'bxncabxdo-mcino-Introduction-to-Git-and-GitHub'...
+remote: Enumerating objects: 21, done.
+remote: Counting objects: 100% (21/21), done.
+remote: Compressing objects: 100% (19/19), done.
+remote: Total 21 (delta 3), reused 14 (delta 1), pack-reused 0 (from 0)
+Receiving objects: 100% (21/21), 11.96 KiB | 11.96 MiB/s, done.
+Resolving deltas: 100% (3/3), done.
+theia@theia-bcabxdo:/home/project$ cd README.md
+bash: cd: README.md: No such file or directory
+theia@theia-bcabxdo:/home/project$ git status
+fatal: not a git repository (or any parent up to mount point /home)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+theia@theia-bcabxdo:/home/project$ cd your-repo
+bash: cd: your-repo: No such file or directory
+theia@theia-bcabxdo:/home/project$ git status
+fatal: not a git repository (or any parent up to mount point /home)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+theia@theia-bcabxdo:/home/project$ pwd
+/home/project
+theia@theia-bcabxdo:/home/project$ ls
+Centralized-repository-shipping_calculations
+bxncabxdo-mcino-Introduction-to-Git-and-GitHub
+mcino-Introduction-to-Git-and-GitHub
+theia@theia-bcabxdo:/home/project$ cd bxncabxdo-mcino-Introduction-to-Git-and-GitHub
+theia@theia-bcabxdo:/home/project/bxncabxdo-mcino-Introduct
+ion-to-Git-and-GitHub$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+theia@theia-bcabxdo:/home/project/bxncabxdo-mcino-Introduct
+ion-to-Git-and-GitHub$ git checkout -b bug-fix-typo
+Switched to a new branch 'bug-fix-typo'
+theia@theia-bcabxdo:/home/project/bxncabxdo-mcino-Introduct
+ion-to-Git-and-GitHub$ git add README.md
+theia@theia-bcabxdo:/home/project/bxncabxdo-mcino-Introduct
+ion-to-Git-and-GitHub$ git commit -m "Fix footer typo from 2022 to 2023"
+On branch bug-fix-typo
+nothing to commit, working tree clean
+theia@theia-bcabxdo:/home/project/bxncabxdo-mcino-Introduct
+ion-to-Git-and-GitHub$ git push origin bug-fix-typo
+Username for 'https://github.com': bxncabxdo
+Password for 'https://bxncabxdo@github.com': 
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/bxncabxdo/bxncabxdo-mcino-Introduction-to-Git-and-GitHub.git/'
+theia@theia-bcabxdo:/home/project/bxncabxdo-mcino-Introduct
+ion-to-Git-and-GitHub$ git check out main
+git: 'check' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+theia@theia-bcabxdo:/home/project/bxncabxdo-mcino-Introduct
+ion-to-Git-and-GitHub$ git pull origin main    
+From https://github.com/bxncabxdo/bxncabxdo-mcino-Introduction-to-Git-and-GitHub
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+theia@theia-bcabxdo:/home/project/bxncabxdo-mcino-Introduct
+ion-to-Git-and-GitHub$ git merge bug-fix-typo
+Already up to date.
+theia@theia-bcabxdo:/home/project/bxncabxdo-mcino-Introduct
+ion-to-Git-and-GitHub$ git push origin main
+Username for 'https://github.com': bxncabxdo
+Password for 'https://bxncabxdo@github.com': 
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/bxncabxdo/bxncabxdo-mcino-Introduction-to-Git-and-GitHub.git/'
+theia@theia-bcabxdo:/home/project/bxncabxdo-mcino-Introduct
+ion-to-Git-and-GitHub$ 
